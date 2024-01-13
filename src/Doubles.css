@@ -1,0 +1,119 @@
+:root {
+    --distance-doubles: -185px;
+    --width-doubles: 50px;
+}
+
+.doubles {
+    position: absolute;
+    /* width: 150px;
+    aspect-ratio: 1/1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doubles>button {
+    position: absolute;
+    width: var(--width-doubles);
+    /* aspect-ratio: 1/1; */
+    height: 20px;
+    border-radius: 30%;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* Calculate positions for each button */
+.doubles>button:nth-child(odd) {
+    background-color: red;
+}
+
+.doubles>button:nth-child(even) {
+    background-color: green;
+}
+
+.doubles>button:nth-child(1) {
+    transform: translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(2) {
+    transform: rotate(18deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(3) {
+    transform: rotate(36deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(4) {
+    transform: rotate(54deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(5) {
+    transform: rotate(72deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(6) {
+    transform: rotate(90deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(7) {
+    transform: rotate(108deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(8) {
+    transform: rotate(126deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(9) {
+    transform: rotate(144deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(10) {
+    transform: rotate(162deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(11) {
+    transform: rotate(180deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(12) {
+    transform: rotate(198deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(13) {
+    transform: rotate(216deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(14) {
+    transform: rotate(234deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(15) {
+    transform: rotate(252deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(16) {
+    transform: rotate(270deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(17) {
+    transform: rotate(288deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(18) {
+    transform: rotate(306deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(19) {
+    transform: rotate(324deg) translate(0, var(--distance-doubles));
+}
+
+.doubles>button:nth-child(20) {
+    transform: rotate(342deg) translate(0, var(--distance-doubles));
+}
+
+
+/* mobile *******/
+@media only screen and (max-width: 640px) {}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/darts-checkout-trainer/static/css/main.98742f23.css",
+    "main.js": "/darts-checkout-trainer/static/js/main.55ad7dbd.js",
+    "index.html": "/darts-checkout-trainer/index.html",
+    "main.98742f23.css.map": "/darts-checkout-trainer/static/css/main.98742f23.css.map",
+    "main.55ad7dbd.js.map": "/darts-checkout-trainer/static/js/main.55ad7dbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98742f23.css",
+    "static/js/main.55ad7dbd.js"
+  ]
+}

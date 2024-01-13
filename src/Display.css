@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.display-outer-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.display-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.user-selected-scores {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    gap: 8px;
+    margin-top: -6px;
+    padding: 4px;
+}
+
+
+@keyframes growAndShrinkCorrect {
+    0% {
+        font-size: 22px;
+    }
+
+    50% {
+        font-size: 30px;
+        color: rgb(65, 250, 28);
+    }
+
+    100% {
+        font-size: 22px;
+        color: rgb(65, 250, 28);
+    }
+}
+
+.user-selected-scores.correct-animated-text {
+    animation: growAndShrinkCorrect 1.4s ease;
+    /* Apply the animation */
+}
+
+@keyframes growAndShowWrong {
+    0% {
+        font-size: 22px;
+    }
+
+    40% {
+        font-size: 26px;
+        color: red;
+    }
+
+    100% {
+        font-size: 26px;
+        color: red;
+    }
+}
+
+.user-selected-scores.wrong-animated-text {
+    animation: growAndShowWrong 0.8s ease;
+
+}
+
+
+
+button.submit {
+    width: 90px;
+    -webkit-appearance: none;
+    border: 1px solid gray;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 16px;
+    color: black;
+}

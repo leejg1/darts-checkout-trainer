@@ -1,0 +1,21 @@
+/* .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.title {
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 640px) {
+    .title {
+        font-size: 26px;
+    }
+}
