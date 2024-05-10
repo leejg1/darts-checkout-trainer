@@ -30,7 +30,6 @@
     font-size: 24px;
     font-weight: 600;
     height: 10dvh;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +43,10 @@
 
 .grid_advance_item {
     background-color: green;
+}
+
+.selected {
+    background-color: rgb(163, 163, 163);
 }
 
 .icon_check {

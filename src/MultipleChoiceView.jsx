@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+  import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import styles from "./MultipleChoice.module.css";
 import next from "/src/assets/chevron.png";
@@ -179,7 +179,7 @@ function MultipleChoiceView({
         {buttonScoresArray.map((score, index) => {
           return (
             <a
-              className={styles.grid_item}
+              className={`${styles.grid_item} ${lastButtonPressed === score ? styles.selected : ""}`}
               onClick={() => handleButtonClicked(score)}
               key={index}
             >

@@ -8,6 +8,7 @@ import data from "./checkouts-data-sample.jsx";
 import { useEffect, useState } from "react";
 
 //Do streak mode or learn mode
+//DO npm run deploy when website is done
 
 function App() {
   const [chosenMode, setChosenMode] = useState(1);
