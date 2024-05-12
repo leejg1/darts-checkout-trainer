@@ -1,4 +1,4 @@
-  import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import styles from "./MultipleChoice.module.css";
 import next from "/src/assets/chevron.png";
@@ -12,6 +12,8 @@ function MultipleChoiceView({
   setUserChosenAnswer,
   blankGuessedCheckout,
   setblankGuessedCheckout,
+  modeData,
+  updateEverythingForNewCheckout,
 }) {
   const [buttonScoresArray, setButtonScoresArray] = useState([]);
   const [lastButtonPressed, setLastButtonPressed] = useState("-1");
@@ -158,6 +160,7 @@ function MultipleChoiceView({
   function handleSubmit() {
     if (lastButtonPressed === blankScore) {
       console.log("correct");
+      updateEverythingForNewCheckout(modeData);
     }
     console.log(lastButtonPressed);
   }
@@ -170,8 +173,9 @@ function MultipleChoiceView({
     });
     populateButtonValues();
     console.log("loops");
+
     // eslint-disable-next-line
-  }, [blankScore]);
+  }, [blankCheckout]);
 
   return (
     <div className={styles.container}>
@@ -179,7 +183,9 @@ function MultipleChoiceView({
         {buttonScoresArray.map((score, index) => {
           return (
             <a
-              className={`${styles.grid_item} ${lastButtonPressed === score ? styles.selected : ""}`}
+              className={`${styles.grid_item} ${
+                lastButtonPressed === score ? styles.selected : ""
+              }`}
               onClick={() => handleButtonClicked(score)}
               key={index}
             >
@@ -213,6 +219,8 @@ MultipleChoiceView.propTypes = {
   setUserChosenAnswer: PropTypes.func,
   blankGuessedCheckout: PropTypes.array,
   setblankGuessedCheckout: PropTypes.func,
+  modeData: PropTypes.array,
+  updateEverythingForNewCheckout: PropTypes.func,
 };
 
 export default MultipleChoiceView;

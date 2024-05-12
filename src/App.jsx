@@ -79,14 +79,7 @@ function App() {
       ) {
         const randomZeroOrOne = Math.round(Math.random());
         console.log(`(${randomZeroOrOne}) - 0 is 3darts. 1 is 2darts`);
-        // newCheckout =
-        //   randomZeroOrOne === 0
-        //     ? singleCheckoutObj.threeDarts[
-        //         Math.floor(Math.random() * singleCheckoutObj.threeDarts.length)
-        //       ]
-        //     : singleCheckoutObj.twoDarts[
-        //         Math.floor(Math.random() * singleCheckoutObj.twoDarts.length)
-        //       ];
+
         if (randomZeroOrOne === 0) {
           newCheckout =
             singleCheckoutObj.threeDarts[
@@ -171,6 +164,8 @@ function App() {
             setUserChosenAnswer={setUserChosenAnswer}
             blankGuessedCheckout={blankGuessedCheckout}
             setblankGuessedCheckout={setblankGuessedCheckout}
+            modeData={modeData}
+            updateEverythingForNewCheckout={updateEverythingForNewCheckout}
           />
         </div>
       </div>
