@@ -9,14 +9,15 @@ function MultipleChoiceView({
   blankCheckout,
   blankScore,
   selectedCheckoutArray,
-  setUserChosenAnswer,
   blankGuessedCheckout,
   setblankGuessedCheckout,
   modeData,
   updateEverythingForNewCheckout,
 }) {
   const [buttonScoresArray, setButtonScoresArray] = useState([]);
-  const [lastButtonPressed, setLastButtonPressed] = useState("-1");
+  const [lastButtonPressed, setLastButtonPressed] = useState("");
+  const [submitPressed, setSubmitPressed] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(null);
 
   function populateButtonValues() {
     const trebleNums = ["T20", "T19", "T18", "T17", "T16", "T15", "T14", "T13", "T12", "T11", "T10", "T9", "T8"]; // prettier-ignore
@@ -132,12 +133,10 @@ function MultipleChoiceView({
     setLastButtonPressed((prevVal) => {
       if (scr === prevVal) {
         setblankGuessedCheckout(blankCheckout);
-        setUserChosenAnswer("nothing_selected");
-        return "0000000";
+        return "";
       } else {
         const updatedArray = blankCheckout.map((item) => {
           if (item === "") {
-            setUserChosenAnswer(scr);
             return scr; // Replace "" with 3
           } else {
             return item; // Keep other items unchanged
@@ -153,23 +152,34 @@ function MultipleChoiceView({
 
   function removeChosenScore() {
     setblankGuessedCheckout(blankCheckout);
-    setLastButtonPressed("0000000");
-    setUserChosenAnswer("nothing_selected");
+    setLastButtonPressed("");
   }
 
   function handleSubmit() {
+    setSubmitPressed(true);
     if (lastButtonPressed === blankScore) {
+      setIsCorrect(true);
       console.log("correct");
-      updateEverythingForNewCheckout(modeData);
+    } else if (lastButtonPressed !== blankScore) {
+      setIsCorrect(false);
+      console.log("incorrect");
+    } else {
+      setIsCorrect(null);
     }
     console.log(lastButtonPressed);
   }
 
+  function handleProceed() {
+    setSubmitPressed(false);
+
+    updateEverythingForNewCheckout(modeData);
+  }
+
   useEffect(() => {
-    // This effect will run whenever blankScore changes
+    // This effect will run whenever blankCheckout changes
     setLastButtonPressed((prevVal) => {
       console.log("lbp", prevVal);
-      return "0000000";
+      return "";
     });
     populateButtonValues();
     console.log("loops");
@@ -184,7 +194,21 @@ function MultipleChoiceView({
           return (
             <a
               className={`${styles.grid_item} ${
-                lastButtonPressed === score ? styles.selected : ""
+                !submitPressed && lastButtonPressed === score
+                  ? styles.selected
+                  : ""
+              } ${submitPressed ? styles.disabled_link : ""} ${
+                submitPressed && isCorrect && blankScore === score
+                  ? styles.bg_green
+                  : ""
+              } ${
+                submitPressed && !isCorrect && lastButtonPressed === score
+                  ? styles.bg_red
+                  : ""
+              } ${
+                submitPressed && !isCorrect && blankScore === score
+                  ? styles.correct_animation
+                  : ""
               }`}
               onClick={() => handleButtonClicked(score)}
               key={index}
@@ -196,17 +220,35 @@ function MultipleChoiceView({
       </div>
       <div className={styles.grid_end_container}>
         <a
-          className={`${styles.grid_item} ${styles.grid_undo_item}`}
+          className={`${styles.grid_item} ${styles.bg_red} ${
+            submitPressed || lastButtonPressed === ""
+              ? styles.disabled_link
+              : ""
+          } ${
+            submitPressed || lastButtonPressed === "" ? styles.low_opacity : ""
+          } `}
           onClick={removeChosenScore}
         >
           <img className={styles.icon_remove} src={remove} />
         </a>
-        <a
-          className={`${styles.grid_item} ${styles.grid_advance_item}`}
-          onClick={handleSubmit}
-        >
-          <img className={styles.icon_check} src={check} />
-        </a>
+
+        {submitPressed ? (
+          <a
+            className={`${styles.grid_item} ${styles.bg_blue}`}
+            onClick={handleProceed}
+          >
+            <img className={styles.icon_next} src={next} />
+          </a>
+        ) : (
+          <a
+            className={`${styles.grid_item} ${styles.bg_green}  ${
+              lastButtonPressed === "" ? styles.disabled_link : ""
+            } ${lastButtonPressed === "" ? styles.low_opacity : ""}`}
+            onClick={handleSubmit}
+          >
+            <img className={styles.icon_check} src={check} />
+          </a>
+        )}
       </div>
     </div>
   );
@@ -216,7 +258,6 @@ MultipleChoiceView.propTypes = {
   blankCheckout: PropTypes.array,
   blankScore: PropTypes.string,
   selectedCheckoutArray: PropTypes.array,
-  setUserChosenAnswer: PropTypes.func,
   blankGuessedCheckout: PropTypes.array,
   setblankGuessedCheckout: PropTypes.func,
   modeData: PropTypes.array,

@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 import MenuBar from "./MenuBar.jsx";
 import TargetView from "./TargetView";
 import CheckoutGivenView from "./CheckoutGivenView";
-import MultipleChoiceView from "./MultipleChoiceView";
+import MultipleChoiceView from "./MultipleChoiceView.jsx";
 import data from "./checkouts-data-sample.jsx";
 import { useEffect, useState } from "react";
 
@@ -21,7 +21,7 @@ function App() {
   const [dartsToThrow, setDartsToThrow] = useState(0);
   const [target, setTarget] = useState(0);
   const [userChosenAnswer, setUserChosenAnswer] = useState("T1000");
-  const [submitPressed, setSubmitPressed] = useState(false);
+
   const [showNextCheckout, setShowNextCheckout] = useState(false);
 
   useEffect(() => {
@@ -34,12 +34,6 @@ function App() {
 
     // eslint-disable-next-line
   }, [chosenMode]);
-
-  useEffect(() => {
-    // This effect will run whenever submitPressed changes
-    // Will probably use updateEverythingForNewCheckout(modeData);
-    // eslint-disable-next-line
-  }, [submitPressed]);
 
   function dataToUse(numberMode) {
     let checkoutsToUse = [];
@@ -143,7 +137,7 @@ function App() {
   }
 
   return (
-    <div className={`${styles.main_container} ${styles.bg_pattern}`}>
+    <div className={`${styles.main_container}`}>
       <div className={styles.inner_container}>
         <div className={styles.inner_top}>
           <MenuBar chosenMode={chosenMode} setChosenMode={setChosenMode} />
@@ -161,7 +155,6 @@ function App() {
             blankCheckout={blankCheckout}
             blankScore={blankScore}
             selectedCheckoutArray={selectedCheckoutArray}
-            setUserChosenAnswer={setUserChosenAnswer}
             blankGuessedCheckout={blankGuessedCheckout}
             setblankGuessedCheckout={setblankGuessedCheckout}
             modeData={modeData}

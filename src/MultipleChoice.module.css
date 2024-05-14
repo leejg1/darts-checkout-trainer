@@ -37,12 +37,16 @@
 
 /* .grid_scores_item {} */
 
-.grid_undo_item {
+.bg_red {
   background-color: red;
 }
 
-.grid_advance_item {
+.bg_green {
   background-color: rgb(1, 153, 1);
+}
+
+.bg_blue {
+  background-color: rgb(94, 94, 245);
 }
 
 .selected {
@@ -62,4 +66,52 @@
 .icon_next {
   aspect-ratio: 1;
   width: 37%;
+}
+
+.disabled_link {
+  pointer-events: none;
+}
+
+.low_opacity {
+  opacity: 40%;
+}
+
+.correct_animation {
+  animation: blinkCorrectAnswer 6s ease forwards;
+}
+
+@keyframes blinkCorrectAnswer {
+  10.89% {
+    background-color: rgb(30, 189, 30);
+  }
+
+  21.78% {
+    background-color: white;
+  }
+
+  33% {
+    background-color: rgb(30, 189, 30);
+  }
+  43.89% {
+    background-color: white;
+  }
+
+  54.78% {
+    background-color: rgb(30, 189, 30);
+  }
+
+  66% {
+    background-color: white;
+  }
+  76.89% {
+    background-color: rgb(30, 189, 30);
+  }
+
+  87.78% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: rgb(30, 189, 30);
+  }
 }
