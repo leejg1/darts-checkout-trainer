@@ -13,10 +13,11 @@ function MultipleChoiceView({
   setblankGuessedCheckout,
   modeData,
   updateEverythingForNewCheckout,
+  submitPressed,
+  setSubmitPressed,
 }) {
   const [buttonScoresArray, setButtonScoresArray] = useState([]);
   const [lastButtonPressed, setLastButtonPressed] = useState("");
-  const [submitPressed, setSubmitPressed] = useState(false);
   const [isCorrect, setIsCorrect] = useState(null);
 
   function populateButtonValues() {
@@ -27,7 +28,6 @@ function MultipleChoiceView({
     if (blankCheckout[blankCheckout.length - 1] === "") {
       const testArray = createArrayWithSixDoubleScores(blankScore, doubleNums);
       setButtonScoresArray(testArray); // prettier-ignore
-      console.log(testArray);
     } else {
       const testArray = createArrayWithSixScores(
         blankScore,
@@ -36,7 +36,6 @@ function MultipleChoiceView({
         singleNums
       );
       setButtonScoresArray(testArray); // prettier-ignore
-      console.log(testArray);
     }
   }
 
@@ -177,12 +176,12 @@ function MultipleChoiceView({
 
   useEffect(() => {
     // This effect will run whenever blankCheckout changes
-    setLastButtonPressed((prevVal) => {
-      console.log("lbp", prevVal);
-      return "";
-    });
+    setLastButtonPressed("");
+    setButtonScoresArray([]);
+    setSubmitPressed(false);
+    setIsCorrect(null);
+
     populateButtonValues();
-    console.log("loops");
 
     // eslint-disable-next-line
   }, [blankCheckout]);
@@ -262,6 +261,8 @@ MultipleChoiceView.propTypes = {
   setblankGuessedCheckout: PropTypes.func,
   modeData: PropTypes.array,
   updateEverythingForNewCheckout: PropTypes.func,
+  submitPressed: PropTypes.bool,
+  setSubmitPressed: PropTypes.func,
 };
 
 export default MultipleChoiceView;

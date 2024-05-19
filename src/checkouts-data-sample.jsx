@@ -168,10 +168,16 @@ const data = [
   {
     target: 61,
     twoDarts: [
-      { checkout: ["T11", "D14"], note: "If Single 11 is hit -> Go for Bull" },
+      {
+        checkout: ["T11", "D14"],
+        note: "If Single 11 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
-      { checkout: ["T15", "D8"], note: "If Single 15 is hit -> Go 6 then D20" },
+      {
+        checkout: ["T15", "D8"],
+        note: "If Single 15 is hit → Go 6 then D20",
+      },
       {
         checkout: ["25", "D18"],
         note: "Any miss surrounding the 25, will leave a 2 dart finish.",
@@ -182,12 +188,15 @@ const data = [
   {
     target: 62,
     twoDarts: [
-      { checkout: ["T12", "D13"], note: "If Single 12 is hit -> Go for Bull" },
+      {
+        checkout: ["T12", "D13"],
+        note: "If Single 12 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
       {
         checkout: ["T10", "D16"],
-        note: "If Single 10 is hit -> Go 12 then D20",
+        note: "If Single 10 is hit → Go 12 then D20",
       },
     ],
     xDarts: [],
@@ -195,22 +204,31 @@ const data = [
   {
     target: 63,
     twoDarts: [
-      { checkout: ["T13", "D12"], note: "If Single 13 is hit -> Go for Bull" },
+      {
+        checkout: ["T13", "D12"],
+        note: "If Single 13 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
-      { checkout: ["T17", "D6"], note: "If Single 17 is hit -> Go 6 then D20" },
+      {
+        checkout: ["T17", "D6"],
+        note: "If Single 17 is hit → Go 6 then D20",
+      },
     ],
     xDarts: [],
   },
   {
     target: 64,
     twoDarts: [
-      { checkout: ["T14", "D11"], note: "If Single 14 is hit -> Go for Bull" },
+      {
+        checkout: ["T14", "D11"],
+        note: "If Single 14 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
       {
         checkout: ["T16", "D8"],
-        note: "If Single 16 is hit -> Go 16 then D16",
+        note: "If Single 16 is hit → Go 16 then D16",
       },
     ],
     xDarts: [],
@@ -218,7 +236,10 @@ const data = [
   {
     target: 65,
     twoDarts: [
-      { checkout: ["T15", "D10"], note: "If Single 15 is hit -> Go for Bull" },
+      {
+        checkout: ["T15", "D10"],
+        note: "If Single 15 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
       {
@@ -227,7 +248,7 @@ const data = [
       },
       {
         checkout: ["T11", "D16"],
-        note: "If Single 11 is hit -> Go 14 then D20",
+        note: "If Single 11 is hit → Go 14 then D20",
       },
     ],
     xDarts: [],
@@ -235,12 +256,15 @@ const data = [
   {
     target: 66,
     twoDarts: [
-      { checkout: ["T16", "D9"], note: "If Single 16 is hit -> Go for Bull" },
+      {
+        checkout: ["T16", "D9"],
+        note: "If Single 16 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
       {
         checkout: ["T10", "D18"],
-        note: "If Single 10 is hit -> Go 16 then D20",
+        note: "If Single 10 is hit → Go 16 then D20",
       },
     ],
     xDarts: [],
@@ -248,7 +272,10 @@ const data = [
   {
     target: 67,
     twoDarts: [
-      { checkout: ["T17", "D8"], note: "If Single 17 is hit -> Go for Bull" },
+      {
+        checkout: ["T17", "D8"],
+        note: "If Single 17 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
       {
@@ -261,12 +288,15 @@ const data = [
   {
     target: 68,
     twoDarts: [
-      { checkout: ["T18", "D7"], note: "If Single 18 is hit -> Go for Bull" },
+      {
+        checkout: ["T18", "D7"],
+        note: "If Single 18 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
       {
         checkout: ["T12", "D16"],
-        note: "If Single 12 is hit -> Go 16 then D20",
+        note: "If Single 12 is hit → Go 16 then D20",
       },
     ],
     xDarts: [],
@@ -274,12 +304,15 @@ const data = [
   {
     target: 69,
     twoDarts: [
-      { checkout: ["T19", "D6"], note: "If Single 19 is hit -> Go for Bull" },
+      {
+        checkout: ["T19", "D6"],
+        note: "If Single 19 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
       {
         checkout: ["T19", "D6"],
-        note: "If Single 19 is hit -> Go 10 then D20",
+        note: "If Single 19 is hit → Go 10 then D20",
       },
     ],
     xDarts: [],
@@ -287,12 +320,15 @@ const data = [
   {
     target: 70,
     twoDarts: [
-      { checkout: ["T20", "D5"], note: "If Single 20 is hit -> Go for Bull" },
+      {
+        checkout: ["T20", "D5"],
+        note: "If Single 20 is hit → Go for Bull",
+      },
     ],
     threeDarts: [
       {
         checkout: ["T18", "D8"],
-        note: "If Single 18 is hit -> Go 12 then D20",
+        note: "If Single 18 is hit → Go 12 then D20",
       },
     ],
     xDarts: [],
@@ -312,11 +348,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T13", "D16"],
-        note: "If Single 13 is hit -> Go 18 then D20",
+        note: "If Single 13 is hit → Go 18 then D20",
       },
       {
         checkout: ["T17", "D10"],
-        note: "If Single 17 is hit -> Go 14 then D20",
+        note: "If Single 17 is hit → Go 14 then D20",
       },
     ],
     xDarts: [],
@@ -332,7 +368,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T16", "D12"],
-        note: "If Single 16 is hit -> Go 16 then D20",
+        note: "If Single 16 is hit → Go 16 then D20",
       },
     ],
     xDarts: [],
@@ -348,7 +384,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "D8"],
-        note: "If Single 19 is hit -> Go 14 then D20",
+        note: "If Single 19 is hit → Go 14 then D20",
       },
     ],
     xDarts: [],
@@ -364,7 +400,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T14", "D16"],
-        note: "If Single 14 is hit -> Go 20 then D20",
+        note: "If Single 14 is hit → Go 20 then D20",
       },
     ],
     xDarts: [],
@@ -380,7 +416,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T17", "D12"],
-        note: "If Single 17 is hit -> Go 18 then D20",
+        note: "If Single 17 is hit → Go 18 then D20",
       },
     ],
     xDarts: [],
@@ -391,7 +427,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T16", "D14"],
-        note: "If Single 16 is hit -> Go 20 then D20",
+        note: "If Single 16 is hit → Go 20 then D20",
       },
     ],
     xDarts: [],
@@ -407,7 +443,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "D10"],
-        note: "If Single 19 is hit -> Go 18 then D20",
+        note: "If Single 19 is hit → Go 18 then D20",
       },
     ],
     xDarts: [],
@@ -423,7 +459,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T18", "D12"],
-        note: "If Single 18 is hit -> Go 20 then D20",
+        note: "If Single 18 is hit → Go 20 then D20",
       },
     ],
     xDarts: [],
@@ -439,7 +475,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "D11"],
-        note: "If Single 19 is hit -> Go 20 then D20",
+        note: "If Single 19 is hit → Go 20 then D20",
       },
     ],
     xDarts: [],
@@ -456,7 +492,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "D10"],
-        note: "If Single 20 is hit -> Go 20 then D20",
+        note: "If Single 20 is hit → Go 20 then D20",
       },
     ],
     xDarts: [],
@@ -472,7 +508,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "D12"],
-        note: "If Single 19 is hit -> Go T12 then D13",
+        note: "If Single 19 is hit → Go T12 then D13",
       },
     ],
     xDarts: [],
@@ -488,7 +524,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T14", "D20"],
-        note: "If Single 14 is hit -> Go T18 then D7",
+        note: "If Single 14 is hit → Go T18 then D7",
       },
     ],
     xDarts: [],
@@ -504,7 +540,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T17", "D16"],
-        note: "If Single 17 is hit -> Go T16 then D9",
+        note: "If Single 17 is hit → Go T16 then D9",
       },
     ],
     xDarts: [],
@@ -520,7 +556,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "D12"],
-        note: "If Single 20 is hit -> Go T14 then D11",
+        note: "If Single 20 is hit → Go T14 then D11",
       },
     ],
     xDarts: [],
@@ -536,7 +572,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T15", "D20"],
-        note: "If Single 15 is hit -> Go T20 then D5",
+        note: "If Single 15 is hit → Go T20 then D5",
       },
     ],
     xDarts: [],
@@ -552,7 +588,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T18", "D16"],
-        note: "If Single 18 is hit -> Go T18 then D7",
+        note: "If Single 18 is hit → Go T18 then D7",
       },
     ],
     xDarts: [],
@@ -568,7 +604,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T17", "D18"],
-        note: "If Single 17 is hit -> Go T20 then D5",
+        note: "If Single 17 is hit → Go T20 then D5",
       },
     ],
     xDarts: [],
@@ -584,7 +620,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "D14"],
-        note: "If Single 20 is hit -> Go T18 then D7",
+        note: "If Single 20 is hit → Go T18 then D7",
       },
     ],
     xDarts: [],
@@ -600,7 +636,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "D16"],
-        note: "If Single 19 is hit -> Go T20 then D5",
+        note: "If Single 19 is hit → Go T20 then D5",
       },
     ],
     xDarts: [],
@@ -611,7 +647,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "D15"],
-        note: "If Single 20 is hit -> Go T20 then D5",
+        note: "If Single 20 is hit → Go T20 then D5",
       },
     ],
     xDarts: [],
@@ -627,7 +663,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T17", "D20"],
-        note: "If Single 17 is hit -> Go T14 then D16",
+        note: "If Single 17 is hit → Go T14 then D16",
       },
     ],
     xDarts: [],
@@ -643,7 +679,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "D16"],
-        note: "If Single 20 is hit -> Go T16 then D12",
+        note: "If Single 20 is hit → Go T16 then D12",
       },
     ],
     xDarts: [],
@@ -659,7 +695,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "D18"],
-        note: "If Single 19 is hit -> Go T14 then D16",
+        note: "If Single 19 is hit → Go T14 then D16",
       },
     ],
     xDarts: [],
@@ -675,7 +711,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T18", "D20"],
-        note: "If Single 18 is hit -> Go T16 then D14",
+        note: "If Single 18 is hit → Go T16 then D14",
       },
     ],
     xDarts: [],
@@ -691,7 +727,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "D19"],
-        note: "If Single 19 is hit -> Go T16 then D14 or D19,D19",
+        note: "If Single 19 is hit → Go T16 then D14 or D19,D19",
       },
     ],
     xDarts: [],
@@ -707,7 +743,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "D18"],
-        note: "If Single 20 is hit -> Go T16 then D14 or D19,D19",
+        note: "If Single 20 is hit → Go T16 then D14 or D19,D19",
       },
     ],
     xDarts: [],
@@ -723,7 +759,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "D20"],
-        note: "If Single 19 is hit -> Go T18 then D12",
+        note: "If Single 19 is hit → Go T18 then D12",
       },
     ],
     xDarts: [],
@@ -739,7 +775,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "D19"],
-        note: "If Single 20 is hit -> Go T18 then D12",
+        note: "If Single 20 is hit → Go T18 then D12",
       },
     ],
     xDarts: [],
@@ -750,7 +786,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "10", "D16"],
-        note: "If Single 19 is hit -> Go T20 then D10 or D20,D20",
+        note: "If Single 19 is hit → Go T20 then D10 or D20,D20",
       },
     ],
     xDarts: [],
@@ -766,7 +802,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "D20"],
-        note: "If Single 20 is hit -> Go T20 then D10 or D20,D20",
+        note: "If Single 20 is hit → Go T20 then D10 or D20,D20",
       },
     ],
     xDarts: [],
@@ -777,7 +813,7 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "9", "D16"],
-        note: "If Single 20 is hit -> Go T19 then D12",
+        note: "If Single 20 is hit → Go T19 then D12",
       },
     ],
     xDarts: [],
@@ -788,11 +824,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "10", "D16"],
-        note: "If Single 20 is hit -> Go T14 then D20",
+        note: "If Single 20 is hit → Go T14 then D20",
       },
       {
         checkout: ["T16", "14", "D20"],
-        note: "If Single 16 is hit -> Go T18 then D16",
+        note: "If Single 16 is hit → Go T18 then D16",
       },
     ],
     xDarts: [],
@@ -803,11 +839,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "11", "D16"],
-        note: "If Single 20 is hit -> Go T17 then D16",
+        note: "If Single 20 is hit → Go T17 then D16",
       },
       {
         checkout: ["T17", "12", "D20"],
-        note: "If Single 17 is hit -> Go T18 then D16",
+        note: "If Single 17 is hit → Go T18 then D16",
       },
     ],
     xDarts: [],
@@ -818,11 +854,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T18", "10", "D20"],
-        note: "If Single 18 is hit -> Go T18 then D16",
+        note: "If Single 18 is hit → Go T18 then D16",
       },
       {
         checkout: ["T16", "16", "D20"],
-        note: "If Single 16 is hit -> Go T20 then D14",
+        note: "If Single 16 is hit → Go T20 then D14",
       },
     ],
     xDarts: [],
@@ -833,19 +869,19 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "5", "D20"],
-        note: "If Single 20 is hit -> Go T15 then D20",
+        note: "If Single 20 is hit → Go T15 then D20",
       },
       {
         checkout: ["T20", "13", "D16"],
-        note: "If Single 20 is hit -> Go T15 then D20",
+        note: "If Single 20 is hit → Go T15 then D20",
       },
       {
         checkout: ["T19", "8", "D20"],
-        note: "If Single 19 is hit -> Go T18 then D16",
+        note: "If Single 19 is hit → Go T18 then D16",
       },
       {
         checkout: ["T19", "16", "D16"],
-        note: "If Single 19 is hit -> Go T18 then D16",
+        note: "If Single 19 is hit → Go T18 then D16",
       },
     ],
     xDarts: [],
@@ -856,11 +892,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "6", "D20"],
-        note: "If Single 20 is hit -> Go T18 then D16",
+        note: "If Single 20 is hit → Go T18 then D16",
       },
       {
         checkout: ["T20", "10", "D18"],
-        note: "If Single 20 is hit -> Go T18 then D16",
+        note: "If Single 20 is hit → Go T18 then D16",
       },
     ],
     xDarts: [],
@@ -871,11 +907,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "15", "D16"],
-        note: "If Single 20 is hit -> Go T17 then D18",
+        note: "If Single 20 is hit → Go T17 then D18",
       },
       {
         checkout: ["T19", "10", "D20"],
-        note: "If Single 19 is hit -> Go T20 then D14",
+        note: "If Single 19 is hit → Go T20 then D14",
       },
     ],
     xDarts: [],
@@ -886,19 +922,19 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "8", "D20"],
-        note: "If Single 20 is hit -> Go T20 then D14",
+        note: "If Single 20 is hit → Go T20 then D14",
       },
       {
         checkout: ["T20", "16", "D16"],
-        note: "If Single 20 is hit -> Go T20 then D14",
+        note: "If Single 20 is hit → Go T20 then D14",
       },
       {
         checkout: ["T19", "19", "D16"],
-        note: "If Single 19 is hit -> Go T19 then D16",
+        note: "If Single 19 is hit → Go T19 then D16",
       },
       {
         checkout: ["T18", "18", "D18"],
-        note: "If Single 18 is hit -> Go T18 then D18",
+        note: "If Single 18 is hit → Go T18 then D18",
       },
     ],
     xDarts: [],
@@ -909,15 +945,15 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "9", "D20"],
-        note: "If Single 20 is hit -> Go T19 then D16",
+        note: "If Single 20 is hit → Go T19 then D16",
       },
       {
         checkout: ["T19", "20", "D16"],
-        note: "If Single 19 is hit -> Go T18 then D18",
+        note: "If Single 19 is hit → Go T18 then D18",
       },
       {
         checkout: ["T19", "12", "D20"],
-        note: "If Single 19 is hit -> Go T18 then D18",
+        note: "If Single 19 is hit → Go T18 then D18",
       },
     ],
     xDarts: [],
@@ -933,11 +969,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "10", "D20"],
-        note: "If Single 20 is hit -> Go T18 then D18",
+        note: "If Single 20 is hit → Go T18 then D18",
       },
       {
         checkout: ["T20", "18", "D16"],
-        note: "If Single 20 is hit -> Go T18 then D18",
+        note: "If Single 20 is hit → Go T18 then D18",
       },
     ],
     xDarts: [],
@@ -948,15 +984,15 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "11", "D20"],
-        note: "If Single 20 is hit -> Go T17 then D20",
+        note: "If Single 20 is hit → Go T17 then D20",
       },
       {
         checkout: ["T20", "19", "D16"],
-        note: "If Single 20 is hit -> Go T17 then D20",
+        note: "If Single 20 is hit → Go T17 then D20",
       },
       {
         checkout: ["T19", "14", "D20"],
-        note: "If Single 19 is hit -> Go T20 then D16",
+        note: "If Single 19 is hit → Go T20 then D16",
       },
     ],
     xDarts: [],
@@ -967,11 +1003,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T20", "12", "D20"],
-        note: "If Single 20 is hit -> Go T20 then D16",
+        note: "If Single 20 is hit → Go T20 then D16",
       },
       {
         checkout: ["T20", "20", "D16"],
-        note: "If Single 20 is hit -> Go T20 then D16",
+        note: "If Single 20 is hit → Go T20 then D16",
       },
     ],
     xDarts: [],
@@ -982,11 +1018,11 @@ const data = [
     threeDarts: [
       {
         checkout: ["T19", "16", "D20"],
-        note: "If Single 19 is hit -> Go T18 then D20",
+        note: "If Single 19 is hit → Go T18 then D20",
       },
       {
         checkout: ["T20", "13", "D20"],
-        note: "If Single 20 is hit -> Go T19 then D18",
+        note: "If Single 20 is hit → Go T19 then D18",
       },
     ],
     xDarts: [],

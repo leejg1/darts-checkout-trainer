@@ -20,9 +20,7 @@ function App() {
   const [blankScore, setBlankScore] = useState("err");
   const [dartsToThrow, setDartsToThrow] = useState(0);
   const [target, setTarget] = useState(0);
-  const [userChosenAnswer, setUserChosenAnswer] = useState("T1000");
-
-  const [showNextCheckout, setShowNextCheckout] = useState(false);
+  const [submitPressed, setSubmitPressed] = useState(false);
 
   useEffect(() => {
     // This effect will run whenever chosenMode changes
@@ -149,6 +147,7 @@ function App() {
               selectedCheckoutObj={selectedCheckoutObj}
               blankGuessedCheckout={blankGuessedCheckout}
               blankScore={blankScore}
+              submitPressed={submitPressed}
             />
           </div>
           <MultipleChoiceView
@@ -159,6 +158,8 @@ function App() {
             setblankGuessedCheckout={setblankGuessedCheckout}
             modeData={modeData}
             updateEverythingForNewCheckout={updateEverythingForNewCheckout}
+            submitPressed={submitPressed}
+            setSubmitPressed={setSubmitPressed}
           />
         </div>
       </div>
