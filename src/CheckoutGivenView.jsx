@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 function CheckoutGivenView({
   selectedCheckoutObj,
   blankGuessedCheckout,
-  blankScore,
   submitPressed,
 }) {
   console.log(selectedCheckoutObj.note);
@@ -57,6 +56,9 @@ function CheckoutGivenView({
             {tipOpen && (
               <div className={styles.tip_text}>{selectedCheckoutObj.note}</div>
             )}
+            {tipOpen && selectedCheckoutObj.note2 !== undefined && (
+              <div className={styles.tip_text}>{selectedCheckoutObj.note2}</div>
+            )}
           </a>
         )}
       </div>
@@ -68,6 +70,7 @@ CheckoutGivenView.propTypes = {
   selectedCheckoutObj: PropTypes.shape({
     checkout: PropTypes.arrayOf(PropTypes.string),
     note: PropTypes.string,
+    note2: PropTypes.string,
   }),
 
   blankGuessedCheckout: PropTypes.array,

@@ -8,8 +8,6 @@ import remove from "/src/assets/close.png";
 function MultipleChoiceView({
   blankCheckout,
   blankScore,
-  selectedCheckoutArray,
-  blankGuessedCheckout,
   setblankGuessedCheckout,
   modeData,
   updateEverythingForNewCheckout,
@@ -25,17 +23,13 @@ function MultipleChoiceView({
     const doubleNums = ["D20", "D19", "D18", "D17", "D16", "D15", "D14", "D13", "D12", "D11", "D10", "D9", "D8", "D7", "D6", "D5"]; // prettier-ignore
     const singleNums = ["20", "19", "18", "17", "16", "15", "14", "13", "12", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1"]; // prettier-ignore
 
+    let scoresForButtonArray;
     if (blankCheckout[blankCheckout.length - 1] === "") {
-      const testArray = createArrayWithSixDoubleScores(blankScore, doubleNums);
-      setButtonScoresArray(testArray); // prettier-ignore
+      scoresForButtonArray = createArrayWithSixDoubleScores(blankScore, doubleNums); // prettier-ignore
+      setButtonScoresArray(scoresForButtonArray); // prettier-ignore
     } else {
-      const testArray = createArrayWithSixScores(
-        blankScore,
-        trebleNums,
-        doubleNums,
-        singleNums
-      );
-      setButtonScoresArray(testArray); // prettier-ignore
+      scoresForButtonArray = createArrayWithSixScores(blankScore, trebleNums, doubleNums, singleNums); // prettier-ignore
+      setButtonScoresArray(scoresForButtonArray); // prettier-ignore
     }
   }
 

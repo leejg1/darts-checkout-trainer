@@ -33,12 +33,12 @@ function MenuBar({ chosenMode, setChosenMode }) {
             <p>For example:</p>
             <p>
               If target is 61 and you have 3 darts, you would go T15 then D8,
-              because you could go 6 → D20 should you miss the T15.
+              because you can go 6 → D20 should you miss the T15.
             </p>
             <p>
               But if the target is 61 and you only have 2 darts, you would go
               T11 instead of T15, because if you hit a single 11, you can finish
-              with the Bullseye, you wouldn&#39;t be able to finish going the
+              with the Bullseye; you wouldn&#39;t be able to finish going the
               T15 route.
             </p>
             <p>
