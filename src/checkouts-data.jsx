@@ -1114,6 +1114,209 @@ const data = [
       },
     ],
   },
+  {
+    target: 126,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T19", "T19", "D6"],
+        note: "If Single 19 is hit → Go T19 then Bull",
+      },
+    ],
+  },
+  {
+    target: 127,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T17", "D8"],
+        note: "If Single 20 is hit → Go T19 then Bull",
+        note2: "If Single 17 is hit → Go Bull",
+      },
+    ],
+  },
+  {
+    target: 128,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T18", "T14", "D16"],
+        note: "If Single 18 is hit → Go T20 then Bull",
+      },
+      {
+        checkout: ["T18", "T18", "D10"],
+        note: "If Single 18 is hit → Go T20 then Bull",
+      },
+    ],
+  },
+  {
+    target: 129,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T19", "T16", "D12"],
+        note: "If Single 19 is hit → Go T20 then Bull",
+      },
+      {
+        checkout: ["T19", "T12", "D18"],
+        note: "If Single 19 is hit → Go T20 then Bull",
+      },
+    ],
+  },
+  {
+    target: 130,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "D5"],
+        note: "If Single 20 is hit → Go T20 then Bull",
+      },
+    ],
+  },
+  {
+    target: 131,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T19", "T14", "D16"],
+        note: "T19 is the safer choice for the first dart because a miss into T7 leaves you 110",
+      },
+      {
+        checkout: ["T20", "T13", "D16"],
+        note: "",
+      },
+      {
+        checkout: ["T17", "D20", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 132,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T16", "D12"],
+        note: "",
+      },
+      {
+        checkout: ["Bull", "Bull", "D16"],
+        note: "If 25 is hit → Go T19 then Bull",
+      },
+    ],
+  },
+  {
+    target: 133,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T19", "D8"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 134,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T14", "D16"],
+        note: "",
+      },
+      {
+        checkout: ["T17", "T17", "D16"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 135,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["Bull", "T15", "D20"],
+        note: "If 25 is hit → Go T20 then Bull",
+      },
+    ],
+  },
+  {
+    target: 136,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T16", "D14"],
+        note: "",
+      },
+      {
+        checkout: ["T20", "T20", "D8"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 137,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T19", "D10"],
+        note: "",
+      },
+      {
+        checkout: ["T20", "T15", "D16"],
+        note: "",
+      },
+      {
+        checkout: ["T19", "T16", "D16"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 138,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T18", "D12"],
+        note: "",
+      },
+      {
+        checkout: ["T19", "T19", "D12"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 139,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T19", "T14", "D20"],
+        note: "",
+      },
+      {
+        checkout: ["T20", "T13", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 140,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "D10"],
+        note: "",
+      },
+      {
+        checkout: ["T20", "D20", "D20"],
+        note: "",
+      },
+      {
+        checkout: ["T20", "T16", "D16"],
+        note: "",
+      },
+    ],
+  },
 ];
 
 export default data;

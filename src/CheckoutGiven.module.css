@@ -43,7 +43,7 @@
 }
 
 .tip_outer_container {
-  background-color: green;
+  background-color: rgb(197, 0, 0);
   font-weight: 700;
 }
 
@@ -69,7 +69,7 @@
 
 .icon_tip {
   aspect-ratio: 1;
-  width: 13%;
+  width: 16%;
 }
 
 /* .tip_text {

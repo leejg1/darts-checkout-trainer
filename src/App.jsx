@@ -4,7 +4,7 @@ import MenuBar from "./MenuBar.jsx";
 import TargetView from "./TargetView";
 import CheckoutGivenView from "./CheckoutGivenView";
 import MultipleChoiceView from "./MultipleChoiceView.jsx";
-import data from "./checkouts-data-sample.jsx";
+import data from "./checkouts-data.jsx";
 import { useEffect, useState } from "react";
 
 //Do streak mode or learn mode

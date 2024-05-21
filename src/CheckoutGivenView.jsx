@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import styles from "./CheckoutGiven.module.css";
-import next from "/src/assets/chevron.png";
+import tip_icon from "/src/assets/tip_icon.png";
 import { useState, useEffect } from "react";
 
 function CheckoutGivenView({
@@ -49,7 +49,7 @@ function CheckoutGivenView({
             <div className={styles.tip_header}>
               <img
                 className={`${styles.icon_tip} ${tipOpen ? styles.rotate : ""}`}
-                src={next}
+                src={tip_icon}
               />
               <p className={styles.tip_header_text}>Tip</p>
             </div>
