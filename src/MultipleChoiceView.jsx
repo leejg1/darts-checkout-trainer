@@ -17,6 +17,7 @@ function MultipleChoiceView({
   const [buttonScoresArray, setButtonScoresArray] = useState([]);
   const [lastButtonPressed, setLastButtonPressed] = useState("");
   const [isCorrect, setIsCorrect] = useState(null);
+  const [showResult, setShowResult] = useState(false);
 
   function populateButtonValues() {
     const trebleNums = ["T20", "T19", "T18", "T17", "T16", "T15", "T14", "T13", "T12", "T11", "T10", "T9", "T8"]; // prettier-ignore
@@ -155,93 +156,108 @@ function MultipleChoiceView({
       console.log("correct");
     } else if (lastButtonPressed !== blankScore) {
       setIsCorrect(false);
-      console.log("incorrect");
+      console.log("wrong");
     } else {
       setIsCorrect(null);
     }
+    setShowResult(true);
     console.log(lastButtonPressed);
   }
 
   function handleProceed() {
-    setSubmitPressed(false);
-
     updateEverythingForNewCheckout(modeData);
   }
 
   useEffect(() => {
     // This effect will run whenever blankCheckout changes
+    // NEED THIS ASWELL AS handleProceed() INCASE GAMEMODE CHANGES WITHOUT CLICKING PROCEED
     setLastButtonPressed("");
     setButtonScoresArray([]);
     setSubmitPressed(false);
     setIsCorrect(null);
 
     populateButtonValues();
+    setShowResult(false);
 
     // eslint-disable-next-line
   }, [blankCheckout]);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.grid_scores_container}>
-        {buttonScoresArray.map((score, index) => {
-          return (
-            <a
-              className={`${styles.grid_item} ${
-                !submitPressed && lastButtonPressed === score
-                  ? styles.selected
-                  : ""
-              } ${submitPressed ? styles.disabled_link : ""} ${
-                submitPressed && isCorrect && blankScore === score
-                  ? styles.bg_green
-                  : ""
-              } ${
-                submitPressed && !isCorrect && lastButtonPressed === score
-                  ? styles.bg_red
-                  : ""
-              } ${
-                submitPressed && !isCorrect && blankScore === score
-                  ? styles.correct_animation
-                  : ""
-              }`}
-              onClick={() => handleButtonClicked(score)}
-              key={index}
-            >
-              {score}
-            </a>
-          );
-        })}
-      </div>
-      <div className={styles.grid_end_container}>
-        <a
-          className={`${styles.grid_item} ${styles.bg_red} ${
-            submitPressed || lastButtonPressed === ""
-              ? styles.disabled_link
-              : ""
-          } ${
-            submitPressed || lastButtonPressed === "" ? styles.low_opacity : ""
-          } `}
-          onClick={removeChosenScore}
+    <div>
+      {showResult && (
+        <div
+          className={`${styles.result_container} ${
+            isCorrect ? styles.bg_green : styles.bg_red
+          }`}
         >
-          <img className={styles.icon_remove} src={remove} />
-        </a>
+          {isCorrect ? <div>Correct!</div> : <div>Incorrect!</div>}
+        </div>
+      )}
 
-        {submitPressed ? (
+      <div className={styles.container}>
+        <div className={styles.grid_scores_container}>
+          {buttonScoresArray.map((score, index) => {
+            return (
+              <a
+                className={`${styles.grid_item} ${
+                  !submitPressed && lastButtonPressed === score
+                    ? styles.selected
+                    : ""
+                } ${submitPressed ? styles.disabled_link : ""} ${
+                  submitPressed && isCorrect && blankScore === score
+                    ? styles.bg_green
+                    : ""
+                } ${
+                  submitPressed && !isCorrect && lastButtonPressed === score
+                    ? styles.bg_red
+                    : ""
+                } ${
+                  submitPressed && !isCorrect && blankScore === score
+                    ? styles.correct_animation
+                    : ""
+                }`}
+                onClick={() => handleButtonClicked(score)}
+                key={index}
+              >
+                {score}
+              </a>
+            );
+          })}
+        </div>
+        <div className={styles.grid_end_container}>
           <a
-            className={`${styles.grid_item} ${styles.bg_blue}`}
-            onClick={handleProceed}
+            className={`${styles.grid_item} ${styles.bg_red} ${
+              submitPressed || lastButtonPressed === ""
+                ? styles.disabled_link
+                : ""
+            } ${
+              submitPressed || lastButtonPressed === ""
+                ? styles.low_opacity
+                : ""
+            } `}
+            onClick={removeChosenScore}
           >
-            <img className={styles.icon_next} src={next} />
+            <img className={styles.icon_remove} src={remove} />
           </a>
-        ) : (
-          <a
-            className={`${styles.grid_item} ${styles.bg_green}  ${
-              lastButtonPressed === "" ? styles.disabled_link : ""
-            } ${lastButtonPressed === "" ? styles.low_opacity : ""}`}
-            onClick={handleSubmit}
-          >
-            <img className={styles.icon_check} src={check} />
-          </a>
-        )}
+
+          {submitPressed ? (
+            <a
+              className={`${styles.grid_item} ${styles.bg_blue}`}
+              onClick={handleProceed}
+            >
+              <img className={styles.icon_next} src={next} />
+            </a>
+          ) : (
+            <a
+              className={`${styles.grid_item} ${styles.bg_green}  ${
+                lastButtonPressed === "" ? styles.disabled_link : ""
+              } ${lastButtonPressed === "" ? styles.low_opacity : ""}`}
+              onClick={handleSubmit}
+            >
+              <img className={styles.icon_check} src={check} />
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

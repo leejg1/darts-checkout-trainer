@@ -45,6 +45,7 @@
 .tip_outer_container {
   background-color: rgb(197, 0, 0);
   font-weight: 700;
+  /* border-top: 1px solid black; */
 }
 
 .tip_inner_container {
