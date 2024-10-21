@@ -1317,6 +1317,252 @@ const data = [
       },
     ],
   },
+  {
+    target: 141,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T19", "D12"],
+        note: "",
+      },
+      {
+        checkout: ["T20", "T15", "D18"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 142,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T14", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 143,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T17", "D16"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 144,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "D12"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 145,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T15", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 146,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T18", "D16"],
+        note: "",
+      },
+      {
+        checkout: ["T19", "T19", "D16"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 147,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T17", "D18"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 148,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "D14"],
+        note: "",
+      },
+      {
+        checkout: ["T20", "T16", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 149,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T19", "D16"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 150,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T18", "D18"],
+        note: "",
+      },
+      {
+        checkout: ["T19", "T19", "D18"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 151,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T17", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 152,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "D16"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 153,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T19", "D18"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 154,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T18", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 155,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T19", "D19"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 156,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "D18"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 157,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T19", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 158,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "D19"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 160,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "D20"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 161,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T17", "Bull"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 164,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T18", "Bull"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 167,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T19", "Bull"],
+        note: "",
+      },
+    ],
+  },
+  {
+    target: 170,
+    twoDarts: [],
+    threeDarts: [
+      {
+        checkout: ["T20", "T20", "Bull"],
+        note: "",
+      },
+    ],
+  },
 ];
 
 export default data;
